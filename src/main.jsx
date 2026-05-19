@@ -28,8 +28,8 @@ import './styles.css';
 import logo from './assets/logo.png';
 
 const apiUrl = import.meta.env.VITE_API_URL || 'https://api.movyo.delivery';
-const apkUrl = import.meta.env.VITE_APK_URL || '/downloads/movyo-garcom.apk';
-const desktopUrl = import.meta.env.VITE_DESKTOP_URL || '/downloads/movyo-desktop.exe';
+const apkUrl = import.meta.env.VITE_APK_URL || 'https://download1532.mediafire.com/e7dit0iq11sggn7YPWQHFV5ska30qiSboi0ePfRWx2hMysOLX0hiQ08i3tnFWgZcrLjPi-JbZIH5ODWbuLznUQ2JxY_S9bXYK5Rb4WfcpH-IU2vInAevEtna-v3mrs9IPAQMmX0XXRTudhVr62WnHheVc9eQiFzdEmia_-34_xOW024/m1opv308qbt7fyp/movyo-garcom.apk';
+const desktopUrl = import.meta.env.VITE_DESKTOP_URL || 'https://download850.mediafire.com/1nvfkrjnv15gpEywN_DBlWaCg2pzQ8kZSs3YiRKSZVB_FntsE3wv2cBphpzr_swNfV1-sId8TjMYNWGRv8Cg3PZRbMO7JEtH8USa8zm-gGfxmYZR4OzsZuWopySmhGKytyu5JIQ7_ZK7VnJraIEpEslH4Ar0bbtYNU5kuNQI0UHdPNI/6t0ivyebvrwxopa/movyo-desktop.exe';
 const dashboardUrl = import.meta.env.VITE_DASHBOARD_URL || 'https://movyo.delivery/app';
 const whatsappUrl = import.meta.env.VITE_WHATSAPP_URL || 'https://wa.me/5581994262615';
 
