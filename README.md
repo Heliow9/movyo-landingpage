@@ -1,57 +1,48 @@
-# Movyo Landing Page Premium
+# Movyo Landing Page — versão completa para produção
 
-Landing page React + Vite em estilo SaaS premium para o domínio `movyo.delivery`.
+Landing page oficial da Movyo Delivery desenvolvida em React + Vite e preparada para publicação em produção.
 
-## O que vem nesta versão
+## Conteúdo desta versão
 
-- UI/UX premium dark com laranja Movyo
-- Navbar transparente com blur e animação no scroll
-- Hero com mockup visual de dashboard, celular e cards flutuantes
-- Seção de recursos do sistema
-- Seção de pagamentos seguros com Mercado Pago
-- Fluxo de teste grátis de 15 dias com liberação via WhatsApp
-- Depoimentos, confiança, downloads e botão flutuante do WhatsApp
-- Links técnicos/API removidos da experiência do usuário
+- apresentação comercial completa do ecossistema Movyo;
+- foco no Movyo Food Desktop como central da operação;
+- Movyo Hub para iPhone via PWA e Android pela Play Store ou APK;
+- demonstração visual de iOS e Android com notificações organizadas;
+- chat Movy com opção de abrir, minimizar e fechar;
+- seção completa de Pagamentos Digitais:
+  - PIX automatizado;
+  - cartão de crédito e débito;
+  - integração com o fluxo do pedido;
+  - benefícios comerciais e operacionais;
+- área de downloads corrigida:
+  - Play Store;
+  - APK Android;
+  - Movyo Food Desktop com impressão térmica integrada ao instalador;
+- cadastro público de restaurante vinculado à API;
+- criação inicial no plano Free por 7 dias com status bloqueado para validação;
+- textos revisados para publicação comercial;
+- layout responsivo com prioridade para apresentação em desktop.
 
-## Instalação
+## Executar localmente
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build de produção
+## Gerar build de produção
 
 ```bash
 npm run build
 ```
 
-A pasta de produção será criada em:
+O build pronto para o servidor será criado em:
 
 ```bash
 dist/
 ```
 
-## Configuração dos links
+## Variáveis de ambiente
 
-Crie um arquivo `.env` baseado no `.env.example`:
+Copie `.env.example` para `.env` e ajuste as URLs quando necessário.
 
-```bash
-cp .env.example .env
-```
-
-Edite:
-
-```env
-VITE_WHATSAPP_URL=https://wa.me/5581994262615?text=Olá,%20quero%20liberar%20minha%20conta%20teste%20grátis%20de%2015%20dias%20no%20Movyo%20Delivery
-VITE_APK_URL=https://movyo.delivery/downloads/movyo-garcom.apk
-VITE_DESKTOP_URL=https://movyo.delivery/downloads/movyo-desktop.exe
-```
-
-## Deploy Nginx
-
-Depois do build, aponte o Nginx para:
-
-```bash
-/var/www/movyo-landingpage/dist
-```
