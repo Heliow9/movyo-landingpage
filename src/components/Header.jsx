@@ -5,10 +5,10 @@ import { config } from '../config';
 
 const links = [
   ['Solução', '#solucao'],
+  ['Recursos', '#recursos'],
   ['Pagamentos', '#pagamentos'],
-  ['Cadastro', '#cadastro'],
+  ['Demonstração', '#demo'],
   ['Downloads', '#downloads'],
-  ['Instalar Hub', '#instalar-hub'],
   ['Contato', '#contato']
 ];
 

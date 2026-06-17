@@ -1,6 +1,7 @@
 import { Benefits } from '../components/Benefits';
 import { DigitalPayments } from '../components/DigitalPayments';
 import { Downloads } from '../components/Downloads';
+import { FeatureSuite } from '../components/FeatureSuite';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
@@ -21,6 +22,7 @@ export function Home() {
       <TrustBar />
       <Modules />
       <Benefits />
+      <FeatureSuite />
       <DigitalPayments />
       <ProductShowcase />
       <SignupForm />

@@ -15,9 +15,11 @@ export function Footer() {
       <div>
         <b>Produto</b>
         <a href="#solucao">Solução</a>
+        <a href="#recursos">Recursos da plataforma</a>
         <a href="#pagamentos">Pagamentos digitais</a>
         <a href="#cadastro">Cadastro Free</a>
         <a href="#downloads">Downloads</a>
+        <a href="#duvidas">Dúvidas frequentes</a>
       </div>
       <div>
         <b>Plataforma</b>

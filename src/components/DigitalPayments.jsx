@@ -68,7 +68,7 @@ export function DigitalPayments() {
           <div className="payments-checks">
             <span><CheckCircle2 /> Pagamento dentro do fluxo do pedido</span>
             <span><CheckCircle2 /> Integração preparada para Mercado Pago</span>
-            <span><CheckCircle2 /> PIX, crédito e débito no checkout</span>
+            <span><CheckCircle2 /> PIX e cartão de crédito no checkout</span>
             <span><CheckCircle2 /> Status conectado ao acompanhamento do pedido</span>
           </div>
 
@@ -103,7 +103,7 @@ export function DigitalPayments() {
               <div className="payment-method-icon"><CreditCard /></div>
               <div>
                 <b>Cartão</b>
-                <small>Crédito ou débito no checkout</small>
+                <small>Crédito no checkout digital</small>
               </div>
               <i />
             </div>
@@ -148,11 +148,10 @@ export function DigitalPayments() {
 
         <article>
           <div className="payment-card-icon card"><CreditCard /></div>
-          <span>Crédito e débito</span>
+          <span>Cartão de crédito</span>
           <h3>Mais opções para o cliente finalizar a compra sem depender de maquininha.</h3>
           <p>
-            O pagamento acontece antes do atendimento ou da entrega, oferecendo mais conveniência ao cliente e uma
-            experiência mais profissional para o restaurante.
+            O pagamento pode acontecer no momento do pedido, oferecendo mais conveniência ao cliente, menos cancelamentos e uma experiência mais profissional para o restaurante.
           </p>
         </article>
       </div>
