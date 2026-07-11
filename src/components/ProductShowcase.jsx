@@ -3,17 +3,18 @@ import {
   BellRing,
   Bot,
   CheckCircle2,
-  Maximize2,
-  MessageCircle,
   Minimize2,
   MonitorSmartphone,
   PlayCircle,
+  Send,
   Sparkles,
   Smartphone,
   TimerReset,
   X,
 } from 'lucide-react';
 import logo from '../assets/logo.png';
+import { getMovyAnswer, movySuggestions } from '../data/movyKnowledge';
+import { trackEvent } from '../lib/analytics';
 
 const iosShots = [
   '/showcase/ios-home-kpis.jpg',
@@ -74,8 +75,8 @@ function DeviceMovy() {
             </button>
           </div>
           <div className="device-movy-body">
-            <div className="device-movy-msg">Oi :) Posso explicar planos, Hub, desktop, impressão e operação da Movyo.</div>
-            <div className="device-movy-msg user">Quero entender como funciona no meu restaurante.</div>
+            <div className="device-movy-msg">Oi :) Posso responder sobre iFood, entregadores, taxas, Hub, desktop e teste de 20 dias.</div>
+            <div className="device-movy-msg user">Como a Movyo organiza meu delivery?</div>
           </div>
         </div>
       )}
@@ -221,12 +222,102 @@ export function ProductShowcase() {
 }
 
 export function MovyChat() {
-  const [open, setOpen] = React.useState(true);
-  const [minimized, setMinimized] = React.useState(false);
+  const [open, setOpen] = React.useState(() => {
+    if (typeof window === 'undefined') return true;
+    return window.matchMedia('(min-width: 821px)').matches;
+  });
+  const [draft, setDraft] = React.useState('');
+  const [typing, setTyping] = React.useState(false);
+  const [messages, setMessages] = React.useState(() => [
+    {
+      id: 'movy-welcome',
+      role: 'assistant',
+      text:
+        'Olá! Eu sou o Movy, o assistente da Movyo. Posso responder sobre iFood, entregadores, taxas, pagamentos, PDV, Hub, desktop, estoque e o teste grátis de 20 dias.',
+      cta: { label: 'Começar teste de 20 dias', href: '#cadastro' },
+      matchedId: 'welcome',
+    },
+  ]);
+  const conversationRef = React.useRef(null);
+  const responseTimerRef = React.useRef(null);
+
+  React.useEffect(() => () => window.clearTimeout(responseTimerRef.current), []);
+
+  React.useEffect(() => {
+    if (conversationRef.current) {
+      conversationRef.current.scrollTop = conversationRef.current.scrollHeight;
+    }
+  }, [messages, typing]);
+
+  const askMovy = React.useCallback((rawQuestion) => {
+    const question = rawQuestion.trim();
+    if (!question || typing) return;
+
+    const answer = getMovyAnswer(question);
+    const timestamp = Date.now();
+
+    setMessages((currentMessages) => [
+      ...currentMessages,
+      { id: `user-${timestamp}`, role: 'user', text: question },
+    ]);
+    setDraft('');
+    setTyping(true);
+
+    trackEvent('movy_question', {
+      matched_intent: answer.matchedId,
+      question_length: question.length,
+    });
+
+    const responseDelay = Math.min(2800, Math.max(1400, 900 + answer.text.length * 3));
+
+    window.clearTimeout(responseTimerRef.current);
+    responseTimerRef.current = window.setTimeout(() => {
+      setMessages((currentMessages) => [
+        ...currentMessages,
+        {
+          id: `assistant-${timestamp}`,
+          role: 'assistant',
+          text: answer.text,
+          cta: answer.cta,
+          matchedId: answer.matchedId,
+        },
+      ]);
+      setTyping(false);
+      trackEvent('movy_answer_shown', { matched_intent: answer.matchedId });
+    }, responseDelay);
+  }, [typing]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    askMovy(draft);
+  };
+
+  const handleOpen = () => {
+    setOpen(true);
+    trackEvent('movy_open');
+  };
+
+  const handleMinimize = () => {
+    setOpen(false);
+    trackEvent('movy_minimize');
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    trackEvent('movy_close');
+  };
+
+  const handleCtaClick = (message) => {
+    trackEvent('movy_cta_click', {
+      matched_intent: message.matchedId || 'unknown',
+      cta_label: message.cta?.label,
+      cta_url: message.cta?.href,
+    });
+  };
 
   if (!open) {
     return (
-      <button className="movy-fab" type="button" onClick={() => { setOpen(true); setMinimized(false); }} aria-label="Abrir chat Movy">
+      <button className="movy-fab" type="button" onClick={handleOpen} aria-label="Abrir chat Movy">
         <Bot size={22} />
         <span>Movy</span>
       </button>
@@ -234,39 +325,77 @@ export function MovyChat() {
   }
 
   return (
-    <aside className={`movy-chat ${minimized ? 'minimized' : ''}`} aria-label="Chat de IA Movy" data-reveal>
+    <aside className="movy-chat" aria-label="Chat de IA Movy">
       <div className="movy-chat-header">
         <div className="movy-bot">
           <div className="movy-avatar"><Bot size={28} /></div>
           <div>
             <strong>Movy</strong>
-            <small>assistente da Movyo</small>
+            <small>IA comercial da Movyo</small>
           </div>
         </div>
         <div className="movy-header-actions">
-          <button type="button" onClick={() => setMinimized((value) => !value)} aria-label={minimized ? 'Expandir chat' : 'Minimizar chat'}>
-            {minimized ? <Maximize2 size={16} /> : <Minimize2 size={16} />}
+          <button type="button" onClick={handleMinimize} aria-label="Minimizar chat">
+            <Minimize2 size={16} />
           </button>
-          <button type="button" onClick={() => setOpen(false)} aria-label="Fechar chat">
+          <button type="button" onClick={handleClose} aria-label="Fechar chat">
             <X size={16} />
           </button>
         </div>
       </div>
 
-      {!minimized && (
-        <>
-          <div className="movy-conversation">
-            <div className="movy-bubble">Olá! Eu sou o Movy :) Posso apresentar planos, instalação, Hub, desktop, vitrine, pedidos, impressão e WhatsApp.</div>
-            <div className="movy-bubble user">Quero organizar meu delivery e minha operação no balcão.</div>
-            <div className="movy-bubble">Perfeito. A Movyo reúne vitrine própria, caixa, pedidos, Hub mobile, desktop Windows, impressão térmica e gestão em tempo real para o restaurante operar melhor.</div>
+      <div className="movy-conversation" ref={conversationRef} aria-live="polite">
+        {messages.map((message) => (
+          <div key={message.id} className={`movy-bubble ${message.role === 'user' ? 'user' : ''}`}>
+            {message.text.split('\n\n').map((paragraph, index) => (
+              <p key={`${message.id}-${index}`}>{paragraph}</p>
+            ))}
+            {message.cta && (
+              <a
+                className="movy-bubble-cta"
+                href={message.cta.href}
+                onClick={() => handleCtaClick(message)}
+              >
+                {message.cta.label}
+              </a>
+            )}
           </div>
+        ))}
+        {typing && (
+          <div className="movy-bubble typing">
+            <span />
+            <span />
+            <span />
+            digitando
+          </div>
+        )}
+      </div>
 
-          <div className="movy-input-fake">
-            <span>Pergunte ao Movy...</span>
-            <a className="btn btn-primary" href="#cadastro">Começar</a>
-          </div>
-        </>
-      )}
+      <div className="movy-suggestions" aria-label="Perguntas rápidas para o Movy">
+        {movySuggestions.map((suggestion) => (
+          <button
+            key={suggestion}
+            type="button"
+            onClick={() => askMovy(suggestion)}
+            disabled={typing}
+          >
+            {suggestion}
+          </button>
+        ))}
+      </div>
+
+      <form className="movy-input" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={draft}
+          onChange={(event) => setDraft(event.target.value)}
+          placeholder="Pergunte sobre iFood, taxas, entregadores..."
+          aria-label="Perguntar ao Movy"
+        />
+        <button type="submit" disabled={!draft.trim() || typing} aria-label="Enviar pergunta">
+          <Send size={17} />
+        </button>
+      </form>
     </aside>
   );
 }

@@ -10,10 +10,14 @@ import { Modules } from '../components/Modules';
 import { SignupForm } from '../components/SignupForm';
 import { TrustBar } from '../components/TrustBar';
 import { MovyChat, ProductShowcase } from '../components/ProductShowcase';
+import { CompetitiveAdvantages } from '../components/CompetitiveAdvantages';
+import { IntegrationSuite } from '../components/IntegrationSuite';
+import { useAnalyticsTracking } from '../hooks/useAnalyticsTracking';
 import { useReveal } from '../hooks/useReveal';
 
 export function Home() {
   useReveal();
+  useAnalyticsTracking();
   return (
     <main>
       <div className="bg"><span /><span /><span /></div>
@@ -22,8 +26,10 @@ export function Home() {
       <TrustBar />
       <Modules />
       <Benefits />
+      <CompetitiveAdvantages />
       <FeatureSuite />
       <DigitalPayments />
+      <IntegrationSuite />
       <ProductShowcase />
       <SignupForm />
       <Downloads />

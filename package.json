@@ -1,12 +1,12 @@
 {
-  "name": "movyo-landingpage",
+  "name": "movyo-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Landing page oficial do Movyo Delivery para domínio principal movyo.delivery.",
+  "description": "Site oficial do Movyo Delivery para domínio principal movyo.delivery.",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-seo-pages.mjs",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {

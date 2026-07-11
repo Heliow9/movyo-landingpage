@@ -12,7 +12,7 @@ export function Hero() {
           vitrine própria, balcão, caixa, relatórios, notificações e acompanhamento em tempo real.
         </p>
         <div className="hero-actions">
-          <a className="btn btn-primary btn-xl" href="#cadastro"><Rocket size={20} /> Criar conta grátis <small>7 dias no plano Free</small></a>
+          <a className="btn btn-primary btn-xl" href="#cadastro"><Rocket size={20} /> Criar conta grátis <small>20 dias no plano Free</small></a>
           <a className="btn btn-ghost btn-xl" href="#solucao">Ver recursos <ArrowRight size={18} /></a>
         </div>
         <div className="hero-badges">

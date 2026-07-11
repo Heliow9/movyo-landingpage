@@ -73,7 +73,7 @@ export function DigitalPayments() {
           </div>
 
           <a className="btn btn-primary payments-cta" href="#cadastro">
-            Ativar meu teste grátis <ArrowRight size={17} />
+            Ativar teste grátis de 20 dias <ArrowRight size={17} />
           </a>
         </div>
 

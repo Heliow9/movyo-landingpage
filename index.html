@@ -10,23 +10,37 @@
     <meta name="language" content="pt-BR" />
     <meta name="geo.region" content="BR" />
     <meta name="format-detection" content="telephone=no" />
+    <meta name="application-name" content="Movyo Delivery" />
 
-    <title>Movyo Delivery | PDV, Delivery, Garçom, Estoque e Pagamentos</title>
+    <title>Movyo Delivery | Sistema para Restaurante, PDV e Delivery Próprio</title>
     <meta
       name="description"
-      content="Plataforma para restaurantes com PDV, delivery próprio, aplicativo para garçom, frente de caixa, estoque por receita, recuperador de vendas, pagamentos online e relatórios. Teste grátis por 7 dias."
+      content="Sistema para restaurantes com PDV, delivery próprio, iFood integrado, app para garçom, app para entregadores, pagamentos online, estoque e teste grátis por 20 dias."
     />
     <meta
       name="keywords"
-      content="sistema delivery, sistema para restaurante, PDV restaurante, aplicativo para garçom, frente de caixa, controle de estoque por receita, recuperador de vendas, pagamento online restaurante, PIX automatizado, cardápio digital, delivery próprio, relatórios restaurante"
+      content="sistema para restaurante, sistema delivery, PDV restaurante, integração iFood, app para entregadores, gestão de entregadores, aplicativo para garçom, frente de caixa, controle de estoque por receita, recuperador de vendas, pagamento online restaurante, PIX automatizado, cardápio digital, delivery próprio, relatórios restaurante, sistema para pizzaria, sistema para hamburgueria"
     />
     <link rel="canonical" href="https://movyo.delivery/" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JV6P9XFLFE"></script>
+    <script>
+      if (window.location.hostname === 'www.movyo.delivery') {
+        window.location.replace('https://movyo.delivery' + window.location.pathname + window.location.search + window.location.hash);
+      }
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JV6P9XFLFE');
+    </script>
 
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Movyo Delivery" />
     <meta property="og:title" content="Movyo Delivery | Sistema completo para restaurantes" />
-    <meta property="og:description" content="PDV, delivery próprio, aplicativo para garçom, frente de caixa, estoque por receita, recuperador de vendas, pagamentos online e relatórios em uma única plataforma." />
+    <meta property="og:description" content="PDV, delivery próprio, integração com iFood, app para entregadores, aplicativo para garçom, pagamentos online, estoque por receita e relatórios em uma única plataforma." />
     <meta property="og:url" content="https://movyo.delivery/" />
     <meta property="og:image" content="https://movyo.delivery/og-movyo.png" />
     <meta property="og:image:alt" content="Movyo Delivery - Sistema completo para restaurantes" />
@@ -51,7 +65,7 @@
         "name": "Movyo Delivery",
         "alternateName": "Movyo",
         "url": "https://movyo.delivery/",
-        "description": "Plataforma completa para restaurantes com delivery próprio, PDV, aplicativo para garçom, frente de caixa, estoque por receita, recuperador de vendas, pagamentos online e relatórios.",
+        "description": "Plataforma completa para restaurantes com delivery próprio, integração com iFood, PDV, aplicativo para garçom, app para entregadores, frente de caixa, estoque por receita, recuperador de vendas, pagamentos online e relatórios.",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web, Android, iOS, Windows",
         "softwareHelp": "https://movyo.delivery/#recursos",
@@ -59,7 +73,7 @@
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "BRL",
-          "description": "Teste grátis por 7 dias no plano Free, sujeito à validação e liberação da conta."
+          "description": "Teste grátis por 20 dias no plano Free, sujeito à validação e liberação da conta."
         },
         "publisher": {
           "@type": "Organization",
@@ -79,12 +93,30 @@
         "sameAs": []
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Movyo Delivery",
+        "url": "https://movyo.delivery/",
+        "inLanguage": "pt-BR",
+        "description": "Sistema para restaurantes com PDV, delivery próprio, integração com iFood, app para entregadores, aplicativo para garçom, pagamentos online, estoque por receita, WhatsApp e relatórios."
+      }
+    </script>
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quantos dias de teste grátis a Movyo oferece?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Movyo oferece 20 dias de teste grátis no plano Free, com validação da conta antes da liberação comercial."
+            }
+          },
           {
             "@type": "Question",
             "name": "A Movyo cobra comissão por pedido?",
@@ -98,7 +130,7 @@
             "name": "Existem taxas nos pagamentos online?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "As taxas transacionais são cobradas apenas quando um pagamento online é processado pelo provedor, como PIX automatizado, cartão de crédito ou carteiras digitais habilitadas."
+              "text": "As taxas transacionais são cobradas apenas quando um pagamento online é processado pelo provedor, como PIX automatizado, cartão de crédito ou carteiras digitais habilitadas. Elas podem variar de R$ 0,20 a R$ 0,50 conforme acordo comercial e provedor de pagamento."
             }
           },
           {
@@ -124,6 +156,20 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main style="max-width: 960px; margin: 40px auto; padding: 24px; font-family: Arial, sans-serif; color: #151515;">
+        <h1>Movyo Delivery: sistema para restaurante, PDV, iFood, delivery próprio e gestão integrada</h1>
+        <p>A Movyo reúne PDV, integração com iFood, aplicativo para garçom, app para entregadores, frente de caixa, cardápio digital, pagamentos online, estoque por receita, WhatsApp, recuperador de vendas, Hub mobile e relatórios para restaurantes.</p>
+        <p>Teste grátis por 20 dias no plano Free, com validação da conta antes da liberação comercial.</p>
+        <nav>
+          <a href="/sistema-para-restaurante/">Sistema para restaurante</a> |
+          <a href="/pdv-restaurante/">PDV restaurante</a> |
+          <a href="/cardapio-digital/">Cardápio digital</a> |
+          <a href="/integracoes-restaurante/">Integrações</a> |
+          <a href="https://wa.me/5581994262615?text=Ol%C3%A1,%20quero%20conhecer%20a%20Movyo%20Delivery">WhatsApp comercial</a>
+        </nav>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

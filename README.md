@@ -1,6 +1,6 @@
-# Movyo Landing Page — recursos comerciais e operacionais
+# Movyo Site Oficial — recursos comerciais e operacionais
 
-Landing page oficial da Movyo Delivery em React + Vite, revisada e preparada para produção.
+Site oficial da Movyo Delivery em React + Vite, revisado e preparado para produção.
 
 ## Conteúdo desta versão
 
@@ -23,10 +23,11 @@ Landing page oficial da Movyo Delivery em React + Vite, revisada e preparada par
   - regras para produtos esgotados;
   - baixa automática por receita e ingredientes;
 - Gestor de Pedidos e Relatórios com canais centralizados, KPIs, caixa e formas de pagamento;
-- FAQ comercial explicando mensalidade sem comissão por pedido;
+- FAQ comercial explicando ausência de comissão por pedido, taxas transacionais de pagamento online, integração com iFood e gestão de entregadores;
 - área de downloads com Play Store, APK e Movyo Food Desktop;
+- links de APK e Desktop podem apontar para arquivos reais ou para solicitação comercial no WhatsApp enquanto os instaladores não estiverem publicados;
 - impressão térmica integrada ao instalador desktop;
-- cadastro público vinculado à API com plano Free por 7 dias e status bloqueado para validação;
+- cadastro público vinculado à API com plano Free por 20 dias e status bloqueado para validação;
 - SEO atualizado e dados estruturados para perguntas frequentes;
 - layout responsivo com prioridade para apresentação em desktop.
 

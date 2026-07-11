@@ -29,7 +29,7 @@ export function SignupForm() {
     try {
       await registerRestaurant(form);
       setForm(initialForm);
-      setMessage({ type: 'success', text: 'Cadastro recebido! A conta entrou no plano Free por 7 dias com status bloqueado para validação e liberação segura.' });
+      setMessage({ type: 'success', text: 'Cadastro recebido! A conta entrou no plano Free por 20 dias com status bloqueado para validação e liberação segura.' });
     } catch (error) {
       setMessage({ type: 'error', text: error.message });
     } finally {
@@ -42,10 +42,10 @@ export function SignupForm() {
       <div className="signup-copy" data-reveal>
         <span className="eyebrow">Comece agora</span>
         <h2>Cadastre um novo restaurante direto na API Movyo.</h2>
-        <p>No envio do formulário, a conta nasce no plano <b>Free</b>, com <b>7 dias de teste</b> e status <b>bloqueado</b> para validação antes da liberação comercial.</p>
+        <p>No envio do formulário, a conta nasce no plano <b>Free</b>, com <b>20 dias de teste</b> e status <b>bloqueado</b> para validação antes da liberação comercial.</p>
         <div className="signup-rules">
           <span><CheckCircle2 /> Plano Free automático</span>
-          <span><CheckCircle2 /> 7 dias de validade inicial</span>
+          <span><CheckCircle2 /> 20 dias de validade inicial</span>
           <span><LockKeyhole /> Status bloqueado por segurança</span>
         </div>
       </div>

@@ -39,6 +39,11 @@ export const modules = [
     text: 'Cardápio online com identidade do restaurante, adicionais, observações, checkout otimizado e acompanhamento do pedido.',
   },
   {
+    icon: Store,
+    title: 'Integração com iFood',
+    text: 'Pedidos do iFood podem entrar no fluxo operacional da Movyo, conectando marketplace, produção, caixa, relatórios e gestão em uma rotina organizada.',
+  },
+  {
     icon: ReceiptText,
     title: 'PDV, balcão e caixa',
     text: 'Venda local, comandas, fechamento de mesa, suprimento, sangria, descontos e relatórios por caixa e operador.',
@@ -59,6 +64,11 @@ export const modules = [
     text: 'Apoio ao atendimento com automações para relacionamento, cardápio, pedidos e comunicação com o cliente.',
   },
   {
+    icon: Truck,
+    title: 'Gestão de entregadores',
+    text: 'Entrega própria com gestão de entregadores e app incluso para o entregador acompanhar pedidos, rotas e rotina de entrega.',
+  },
+  {
     icon: BarChart3,
     title: 'Indicadores e relatórios',
     text: 'KPIs, faturamento, pedidos, ticket médio, formas de pagamento e visão operacional para tomada de decisão.',
@@ -66,7 +76,7 @@ export const modules = [
 ];
 
 export const highlights = [
-  'Teste grátis por 7 dias no plano Free',
+  'Teste grátis por 20 dias no plano Free',
   'Cadastro inicial com status bloqueado para validação segura',
   'Desktop Windows como central da operação do restaurante',
   'Movyo Hub no iPhone via Safari/PWA e no Android pela Play Store ou APK',
@@ -87,14 +97,14 @@ export const downloads = [
     title: 'Movyo Hub APK',
     text: 'Download direto do APK para Android quando o restaurante preferir instalação manual.',
     key: 'apkUrl',
-    cta: 'Baixar APK',
+    cta: 'Solicitar APK',
   },
   {
     icon: MonitorSmartphone,
     title: 'Movyo Food Desktop',
     text: 'Programa Windows para atendimento, produção, caixa e gestão. A impressão térmica já acompanha a instalação.',
     key: 'desktopUrl',
-    cta: 'Baixar Desktop',
+    cta: 'Solicitar Desktop',
   },
 ];
 

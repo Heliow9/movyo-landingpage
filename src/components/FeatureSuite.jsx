@@ -110,9 +110,14 @@ const groups = [
 
 const faqs = [
   {
+    question: 'Quantos dias de teste grátis a Movyo oferece?',
+    answer:
+      'A Movyo oferece 20 dias de teste grátis no plano Free. A conta nasce com status bloqueado para validação e liberação segura antes do uso comercial.',
+  },
+  {
     question: 'A Movyo cobra comissão por pedido?',
     answer:
-      'Não. A Movyo funciona por mensalidade e não cobra comissão sobre cada pedido realizado. O restaurante mantém controle total sobre suas vendas e seus lucros.',
+      'Não. A Movyo não cobra comissão sobre cada pedido. As únicas cobranças variáveis são taxas transacionais quando um pagamento online é processado pelo provedor.',
   },
   {
     question: 'Existem taxas nos pagamentos online?',
@@ -233,16 +238,19 @@ export function FeatureSuite() {
       <div className="pricing-faq" id="duvidas" data-reveal>
         <div className="pricing-card">
           <span className="eyebrow"><CreditCard size={15} /> Modelo transparente</span>
-          <h3>Mensalidade previsível. Sem comissão sobre seus pedidos.</h3>
+          <h3>Sem comissão por pedido. Taxas apenas no pagamento online.</h3>
           <p>
-            A Movyo não fica com uma porcentagem das vendas do restaurante. Você contrata a plataforma por
-            mensalidade e mantém o controle dos seus resultados. Taxas existem somente quando uma transação online é
-            processada pelo provedor de pagamento.
+            A Movyo não cobra comissão sobre cada pedido realizado. As únicas taxas transacionais são cobradas quando
+            um pagamento online é processado dentro do cardápio digital, como PIX automatizado, cartão de crédito ou
+            carteiras digitais habilitadas pelo provedor. Essas taxas podem variar de R$ 0,20 a R$ 0,50 conforme o
+            acordo comercial e o provedor de pagamento.
           </p>
           <div className="pricing-points">
-            <span><CheckCircle2 /> Sem comissão por pedido</span>
+            <span><CheckCircle2 /> Sem comissão por pedido no canal próprio</span>
             <span><CheckCircle2 /> Pedidos ilimitados conforme o plano contratado</span>
-            <span><CheckCircle2 /> Taxas transacionais apenas no pagamento online</span>
+            <span><CheckCircle2 /> Integração com iFood como diferencial operacional</span>
+            <span><CheckCircle2 /> Gestão de entregadores com app incluso para entregadores</span>
+            <span><CheckCircle2 /> Taxas transacionais apenas no pagamento online, geralmente entre R$ 0,20 e R$ 0,50</span>
           </div>
         </div>
 

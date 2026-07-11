@@ -15,7 +15,11 @@ export function Footer() {
       <div>
         <b>Produto</b>
         <a href="#solucao">Solução</a>
+        <a href="#diferenciais">Diferenciais Movyo</a>
         <a href="#recursos">Recursos da plataforma</a>
+        <a href="#integracoes">Integrações</a>
+        <a href="/integracao-ifood/">Integração com iFood</a>
+        <a href="/gestao-entregadores/">Gestão de entregadores</a>
         <a href="#pagamentos">Pagamentos digitais</a>
         <a href="#cadastro">Cadastro Free</a>
         <a href="#downloads">Downloads</a>

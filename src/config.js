@@ -4,6 +4,6 @@ export const config = {
   playStoreUrl: import.meta.env.VITE_PLAY_STORE_URL || 'https://play.google.com/store/apps/details?id=delivery.movyo.hub',
   restaurantSignupPath: import.meta.env.VITE_RESTAURANT_SIGNUP_PATH || '/api/restaurantes/public-cadastro',
   hubUrl: import.meta.env.VITE_HUB_URL || 'https://hub.movyo.delivery',
-  apkUrl: import.meta.env.VITE_APK_URL || 'https://movyo.delivery/downloads/movyo-hub.apk',
-  desktopUrl: import.meta.env.VITE_DESKTOP_URL || 'https://movyo.delivery/downloads/Movyo-Food-Setup.exe'
+  apkUrl: import.meta.env.VITE_APK_URL || 'https://wa.me/5581994262615?text=Ol%C3%A1,%20quero%20receber%20o%20APK%20do%20Movyo%20Hub',
+  desktopUrl: import.meta.env.VITE_DESKTOP_URL || 'https://wa.me/5581994262615?text=Ol%C3%A1,%20quero%20receber%20o%20instalador%20do%20Movyo%20Food%20Desktop'
 };
