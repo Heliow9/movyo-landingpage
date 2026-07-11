@@ -5,6 +5,7 @@ import { config } from '../config';
 
 const links = [
   ['Solução', '#solucao'],
+  ['Sobre', '/sobre-movyo-delivery/'],
   ['Diferenciais', '#diferenciais'],
   ['Recursos', '#recursos'],
   ['Integrações', '#integracoes'],

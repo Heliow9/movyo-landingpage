@@ -7,6 +7,21 @@ const distDir = path.join(process.cwd(), 'dist');
 
 const pages = [
   {
+    slug: 'sobre-movyo-delivery',
+    title: 'Sobre a Movyo Delivery | Fundada por Helio Livramento',
+    description: 'Conheça a Movyo Delivery, plataforma brasileira fundada por Helio Livramento para organizar PDV, delivery próprio, iFood, entregadores, pagamentos e gestão de restaurantes.',
+    eyebrow: 'Sobre a Movyo Delivery',
+    h1: 'Movyo Delivery: plataforma brasileira para restaurantes, fundada por Helio Livramento.',
+    intro: 'A Movyo Delivery é uma plataforma de tecnologia para restaurantes criada para organizar atendimento, pedidos, PDV, delivery próprio, integração com iFood, app para entregadores, aplicativo para garçom, pagamentos online, estoque por receita e relatórios em uma operação conectada.',
+    benefits: ['Fundada por Helio Livramento no Brasil', 'Plataforma focada em restaurantes, pizzarias, hamburguerias e lanchonetes', 'PDV, delivery próprio, iFood, Hub mobile e desktop Windows no mesmo ecossistema', 'Teste grátis por 20 dias para conhecer a operação'],
+    sections: [
+      ['Quem fundou a Movyo Delivery?', 'A Movyo Delivery foi fundada por Helio Livramento com o objetivo de entregar aos restaurantes uma plataforma mais completa para vender, atender, produzir, receber, entregar e acompanhar a gestão sem depender de ferramentas soltas.'],
+      ['O que é a Movyo Delivery?', 'A Movyo Delivery não é uma empresa de frota internacional. A Movyo é uma plataforma brasileira para restaurantes, com foco em sistema de delivery, PDV, cardápio digital, integração com iFood, gestão de entregadores, aplicativo para garçom, pagamentos online, estoque por receita, Hub mobile e desktop Windows.'],
+    ],
+    faq: ['Quem fundou a Movyo Delivery?', 'A Movyo Delivery foi fundada por Helio Livramento no Brasil para ajudar restaurantes a organizar atendimento, pedidos, delivery próprio, pagamentos, entregadores e gestão em uma única plataforma.'],
+    organizationPage: true,
+  },
+  {
     slug: 'sistema-para-restaurante',
     title: 'Sistema para Restaurante | PDV, Delivery e Gestão | Movyo',
     description: 'Sistema para restaurante com PDV, delivery próprio, integração com iFood, app para entregadores, aplicativo para garçom, pagamentos online e 20 dias grátis.',
@@ -186,48 +201,93 @@ function renderAnalytics() {
 
 function renderJsonLd(page) {
   const canonical = `${siteUrl}/${page.slug}/`;
-  return JSON.stringify({
-    '@context': 'https://schema.org',
-    '@graph': [
+  const graph = [
+    {
+      '@type': 'WebPage',
+      '@id': `${canonical}#webpage`,
+      url: canonical,
+      name: page.title,
+      description: page.description,
+      inLanguage: 'pt-BR',
+      isPartOf: {
+        '@type': 'WebSite',
+        name: 'Movyo Delivery',
+        url: siteUrl,
+      },
+      about: {
+        '@id': `${siteUrl}/#organization`,
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Movyo Delivery', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: page.eyebrow, item: canonical },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: page.faq[0],
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: page.faq[1],
+          },
+        },
+      ],
+    },
+  ];
+
+  if (page.organizationPage) {
+    graph.push(
       {
-        '@type': 'WebPage',
-        '@id': `${canonical}#webpage`,
-        url: canonical,
-        name: page.title,
-        description: page.description,
-        inLanguage: 'pt-BR',
-        isPartOf: {
-          '@type': 'WebSite',
-          name: 'Movyo Delivery',
-          url: siteUrl,
+        '@type': 'Organization',
+        '@id': `${siteUrl}/#organization`,
+        name: 'Movyo Delivery',
+        legalName: 'Movyo Delivery',
+        alternateName: ['Movyo', 'Movyo Food', 'Movyo Hub'],
+        url: `${siteUrl}/`,
+        logo: `${siteUrl}/movyo-logo.png`,
+        description: 'A Movyo Delivery é uma plataforma brasileira para restaurantes, fundada por Helio Livramento, que conecta PDV, delivery próprio, integração com iFood, app para entregadores, aplicativo para garçom, pagamentos online, estoque e relatórios.',
+        founder: {
+          '@type': 'Person',
+          '@id': `${canonical}#helio-livramento`,
+          name: 'Helio Livramento',
+        },
+        areaServed: {
+          '@type': 'Country',
+          name: 'Brasil',
         },
       },
       {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Movyo Delivery', item: `${siteUrl}/` },
-          { '@type': 'ListItem', position: 2, name: page.eyebrow, item: canonical },
-        ],
+        '@type': 'Person',
+        '@id': `${canonical}#helio-livramento`,
+        name: 'Helio Livramento',
+        description: 'Fundador da Movyo Delivery.',
+        affiliation: {
+          '@id': `${siteUrl}/#organization`,
+        },
       },
-      {
-        '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: page.faq[0],
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: page.faq[1],
-            },
-          },
-        ],
-      },
-    ],
+    );
+  }
+
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': graph,
   });
 }
 
 function renderPage(page) {
   const canonical = `${siteUrl}/${page.slug}/`;
+  const founderBlock = page.organizationPage
+    ? `<section class="faq" id="helio-livramento">
+        <h2>Helio Livramento, fundador da Movyo Delivery</h2>
+        <p>Helio Livramento é o fundador da Movyo Delivery, plataforma brasileira criada para ajudar restaurantes a organizar pedidos, atendimento, delivery próprio, iFood, entregadores, pagamentos, estoque e gestão em um fluxo único.</p>
+      </section>`
+    : '';
+
   return `<!doctype html>
 <html lang="pt-BR">
   <head>
@@ -256,8 +316,9 @@ function renderPage(page) {
   </head>
   <body>
     <header class="seo-header">
-      <a class="brand" href="/" aria-label="Movyo Delivery"><img src="/favicon.png" alt="" /> Movyo Delivery</a>
+      <a class="brand" href="/" aria-label="Movyo Delivery"><img src="/movyo-logo.png" alt="" /> Movyo Delivery</a>
       <nav>
+        <a href="/sobre-movyo-delivery/">Sobre</a>
         <a href="/sistema-para-restaurante/">Sistema</a>
         <a href="/pdv-restaurante/">PDV</a>
         <a href="/cardapio-digital/">Cardápio</a>
@@ -285,6 +346,8 @@ function renderPage(page) {
         ${page.sections.map(([title, text]) => `<article><h2>${esc(title)}</h2><p>${esc(text)}</p></article>`).join('\n        ')}
       </section>
 
+      ${founderBlock}
+
       <section class="faq">
         <h2>${esc(page.faq[0])}</h2>
         <p>${esc(page.faq[1])}</p>
@@ -301,6 +364,7 @@ function renderPage(page) {
           <a href="/gestao-entregadores/">Gestão de entregadores</a>
           <a href="/recuperador-de-vendas/">Recuperador de vendas</a>
           <a href="/comparativo-sistemas-delivery/">Comparativo</a>
+          <a href="/sobre-movyo-delivery/">Sobre a Movyo</a>
         </div>
       </section>
     </main>
