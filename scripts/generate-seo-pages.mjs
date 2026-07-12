@@ -162,6 +162,91 @@ const pages = [
     faq: ['A Movyo inclui app para entregadores?', 'Sim. A Movyo oferece gestão de entregadores com app incluso para apoiar a rotina da entrega própria do restaurante.'],
   },
   {
+    slug: 'alternativa-anota-ai',
+    title: 'Alternativa ao Anota AI para Restaurantes | Movyo Delivery',
+    description: 'Compare a Movyo como alternativa ao Anota AI para restaurante com PDV, iFood, app para entregadores, Hub mobile, desktop e plano Mobile Starter por R$ 49,99.',
+    keywords: ['alternativa ao Anota AI', 'Anota AI alternativa', 'sistema parecido com Anota AI', 'sistema para restaurante com iFood', 'Movyo Mobile Starter', 'sistema delivery WhatsApp restaurante'],
+    eyebrow: 'Alternativa ao Anota AI',
+    h1: 'Alternativa ao Anota AI para quem precisa de delivery, PDV e operação completa.',
+    intro: 'Restaurantes que pesquisam por Anota AI geralmente querem vender melhor no digital, organizar pedidos e reduzir trabalho manual. A Movyo entra como uma alternativa para quem também precisa de PDV, integração com iFood, app para entregadores, Hub mobile, desktop Windows, pagamentos online, estoque por receita e gestão em tempo real.',
+    benefits: ['Perfil Mobile Starter por R$ 49,99', 'PDV, Hub mobile e desktop no mesmo ecossistema', 'Integração com iFood e app para entregadores', 'Sem comissão por pedido no canal próprio'],
+    sections: [
+      ['Quando procurar uma alternativa ao Anota AI?', 'Quando o restaurante quer ir além do atendimento e do cardápio digital, conectando pedido, caixa, produção, iFood, entregadores, pagamentos, estoque e relatórios em uma operação mais integrada.'],
+      ['O que a Movyo prioriza', 'A Movyo prioriza controle operacional. Em vez de tratar o delivery como uma ferramenta isolada, a plataforma conecta o fluxo de venda com PDV, Hub, desktop, equipe, entregadores e indicadores para o gestor decidir melhor.'],
+      ['Preço de entrada', 'O menor perfil comercial previsto é o Movyo Mobile Starter por R$ 49,99, pensado como porta de entrada para restaurantes que querem testar uma operação mais organizada antes de avançar para planos maiores.'],
+      ['Taxas e comissões', 'A Movyo não cobra comissão por pedido no canal próprio. As únicas taxas variáveis são transacionais, quando o pagamento passa por provedor como PIX automatizado, cartão ou carteira digital.'],
+    ],
+    faq: ['A Movyo pode ser usada como alternativa ao Anota AI?', 'Sim. A Movyo pode ser avaliada como alternativa por restaurantes que procuram delivery digital, mas também querem PDV, integração com iFood, app para entregadores, Hub mobile, desktop Windows, pagamentos e gestão integrada.'],
+    offer: {
+      name: 'Movyo Mobile Starter',
+      price: '49.99',
+      description: 'Perfil de entrada da Movyo para restaurantes, com valor a partir de R$ 49,99 conforme condições comerciais.',
+    },
+    mentions: ['Anota AI'],
+    disclaimer: 'Anota AI é marca de seu respectivo proprietário. Esta página é uma comparação informativa e não indica parceria, afiliação ou endosso entre as marcas.',
+    relatedLinks: [
+      ['Alternativa ao Consumer', '/alternativa-consumer/'],
+      ['Comparativo de sistemas de delivery', '/comparativo-sistemas-delivery/'],
+    ],
+  },
+  {
+    slug: 'alternativa-consumer',
+    title: 'Alternativa ao Consumer para Restaurante | Movyo Delivery',
+    description: 'Movyo como alternativa ao Consumer para restaurante com PDV, delivery próprio, iFood, app para entregadores, Hub mobile e Mobile Starter por R$ 49,99.',
+    keywords: ['alternativa ao Consumer', 'Consumer alternativa', 'sistema parecido com Consumer', 'PDV restaurante com delivery', 'Movyo Mobile Starter', 'sistema para restaurante com entregadores'],
+    eyebrow: 'Alternativa ao Consumer',
+    h1: 'Alternativa ao Consumer para restaurantes que querem PDV, delivery e gestão conectada.',
+    intro: 'Quem pesquisa por Consumer costuma buscar PDV, delivery, caixa e controle para restaurante. A Movyo se posiciona como alternativa para operações que querem unir PDV, delivery próprio, integração com iFood, app para entregadores, aplicativo para garçom, Hub mobile, desktop Windows, pagamentos e relatórios.',
+    benefits: ['Mobile Starter por R$ 49,99 como porta de entrada', 'Delivery próprio sem comissão por pedido', 'iFood integrado com gestão de pedidos', 'App para entregadores incluso no ecossistema'],
+    sections: [
+      ['Quando comparar Movyo e Consumer?', 'A comparação faz sentido quando o restaurante quer avaliar não apenas o PDV, mas todo o fluxo: pedidos online, iFood, entregadores, pagamentos, estoque por receita, salão, balcão, caixa e acompanhamento pelo celular.'],
+      ['Foco da Movyo', 'A Movyo busca reduzir telas soltas e decisões no improviso. O objetivo é colocar atendimento, produção, caixa, entrega e gestão dentro de um fluxo mais claro para equipe e gestor.'],
+      ['Plano de entrada', 'O perfil Movyo Mobile Starter por R$ 49,99 ajuda restaurantes menores a começarem com uma solução acessível, mantendo caminho para ampliar recursos conforme a operação crescer.'],
+      ['Controle do canal próprio', 'A Movyo fortalece o delivery próprio do restaurante, sem comissão por pedido, mantendo taxas apenas quando houver processamento de pagamento online pelo provedor contratado.'],
+    ],
+    faq: ['A Movyo é uma alternativa ao Consumer?', 'A Movyo pode ser considerada uma alternativa para restaurantes que querem PDV, delivery próprio, iFood, app para entregadores, Hub mobile, desktop Windows, pagamentos e gestão integrada em uma única plataforma.'],
+    offer: {
+      name: 'Movyo Mobile Starter',
+      price: '49.99',
+      description: 'Perfil de entrada da Movyo para restaurantes, com valor a partir de R$ 49,99 conforme condições comerciais.',
+    },
+    mentions: ['Consumer'],
+    disclaimer: 'Consumer é marca de seu respectivo proprietário. Esta página é uma comparação informativa e não indica parceria, afiliação ou endosso entre as marcas.',
+    relatedLinks: [
+      ['Alternativa ao Anota AI', '/alternativa-anota-ai/'],
+      ['Comparativo de sistemas de delivery', '/comparativo-sistemas-delivery/'],
+    ],
+  },
+  {
+    slug: 'alternativas-sistemas-restaurante',
+    title: 'Alternativas a Anota AI, Consumer e Sistemas de Restaurante | Movyo',
+    description: 'Veja a Movyo entre alternativas para restaurante com PDV, iFood, delivery próprio, app para entregadores, pagamentos e plano Mobile Starter por R$ 49,99.',
+    keywords: ['alternativas sistemas restaurante', 'alternativas Anota AI Consumer', 'melhor sistema para restaurante', 'sistema delivery com iFood', 'sistema para pizzaria e hamburgueria'],
+    eyebrow: 'Alternativas para restaurante',
+    h1: 'Alternativas a sistemas de restaurante para quem quer operar tudo em um fluxo só.',
+    intro: 'Na hora de comparar Anota AI, Consumer, Saipos, Goomer, MarketUP e outros sistemas, o restaurante precisa olhar além do nome da ferramenta: PDV, delivery próprio, iFood, app para entregadores, garçom, pagamentos, estoque, relatórios, suporte e custo de entrada.',
+    benefits: ['Movyo Mobile Starter por R$ 49,99', 'PDV, delivery, iFood e entregadores conectados', '20 dias de teste no plano Free', 'Sem comissão por pedido no canal próprio'],
+    sections: [
+      ['O que comparar antes de escolher', 'Compare se o sistema resolve apenas uma etapa ou se acompanha a operação inteira: venda, atendimento, produção, pagamento, entrega, estoque, caixa e relatórios. Quanto mais etapas conectadas, menor tende a ser o retrabalho.'],
+      ['Onde a Movyo quer competir', 'A Movyo quer competir no valor operacional: canal próprio, iFood integrado, app para entregadores, Hub mobile, desktop Windows, aplicativo para garçom, recuperador de vendas, pagamentos online e gestão em tempo real.'],
+      ['Entrada acessível', 'O perfil Mobile Starter por R$ 49,99 cria uma entrada comercial mais simples para restaurantes que ainda não querem contratar um pacote maior, mas precisam começar com organização.'],
+      ['Cuidado com custo escondido', 'Na comparação, o gestor deve observar mensalidade, comissão por pedido, taxas transacionais, custos de implantação, módulos extras e tempo gasto pela equipe para operar várias ferramentas.'],
+    ],
+    faq: ['Como escolher entre Anota AI, Consumer e outras alternativas?', 'A escolha deve considerar o fluxo real do restaurante: PDV, canais de venda, iFood, delivery próprio, entregadores, pagamentos, estoque, relatórios, suporte e custo total. A Movyo entra nessa comparação como plataforma integrada para restaurantes.'],
+    offer: {
+      name: 'Movyo Mobile Starter',
+      price: '49.99',
+      description: 'Perfil de entrada da Movyo para restaurantes, com valor a partir de R$ 49,99 conforme condições comerciais.',
+    },
+    mentions: ['Anota AI', 'Consumer', 'Saipos', 'Goomer', 'MarketUP'],
+    disclaimer: 'As marcas citadas pertencem aos seus respectivos proprietários. Esta página tem finalidade informativa e comparativa, sem indicar parceria, afiliação ou endosso entre as marcas.',
+    relatedLinks: [
+      ['Alternativa ao Anota AI', '/alternativa-anota-ai/'],
+      ['Alternativa ao Consumer', '/alternativa-consumer/'],
+      ['Comparativo de sistemas de delivery', '/comparativo-sistemas-delivery/'],
+    ],
+  },
+  {
     slug: 'comparativo-sistemas-delivery',
     title: 'Movyo vs Sistemas de Delivery e Marketplaces | Comparativo',
     description: 'Comparativo da Movyo com sistemas comuns de delivery: sem comissão por pedido, iFood integrado, app para entregadores, PDV, cardápio próprio, pagamentos e gestão.',
@@ -240,6 +325,33 @@ function renderJsonLd(page) {
     },
   ];
 
+  if (page.mentions?.length) {
+    graph[0].mentions = page.mentions.map((name) => ({
+      '@type': 'Organization',
+      name,
+    }));
+  }
+
+  if (page.offer) {
+    graph.push({
+      '@type': 'Product',
+      '@id': `${canonical}#mobile-starter`,
+      name: page.offer.name,
+      description: page.offer.description,
+      brand: {
+        '@id': `${siteUrl}/#organization`,
+      },
+      category: 'Software para restaurante',
+      offers: {
+        '@type': 'Offer',
+        priceCurrency: 'BRL',
+        price: page.offer.price,
+        availability: 'https://schema.org/InStock',
+        url: canonical,
+      },
+    });
+  }
+
   if (page.organizationPage) {
     graph.push(
       {
@@ -287,6 +399,27 @@ function renderPage(page) {
         <p>Helio Livramento é o fundador da Movyo Delivery, plataforma brasileira criada para ajudar restaurantes a organizar pedidos, atendimento, delivery próprio, iFood, entregadores, pagamentos, estoque e gestão em um fluxo único.</p>
       </section>`
     : '';
+  const keywordsMeta = page.keywords?.length
+    ? `<meta name="keywords" content="${esc(page.keywords.join(', '))}" />`
+    : '';
+  const offerBlock = page.offer
+    ? `<section class="offer">
+        <span>Plano de entrada</span>
+        <h2>${esc(page.offer.name)} por R$ ${esc(page.offer.price.replace('.', ','))}</h2>
+        <p>${esc(page.offer.description)}</p>
+      </section>`
+    : '';
+  const disclaimerBlock = page.disclaimer
+    ? `<p class="disclaimer">${esc(page.disclaimer)}</p>`
+    : '';
+  const relatedBlock = page.relatedLinks?.length
+    ? `<section class="link-band comparison-band">
+        <h2>Comparativos relacionados.</h2>
+        <div>
+          ${page.relatedLinks.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join('\n          ')}
+        </div>
+      </section>`
+    : '';
 
   return `<!doctype html>
 <html lang="pt-BR">
@@ -297,6 +430,7 @@ function renderPage(page) {
     <meta name="theme-color" content="#f97316" />
     <title>${esc(page.title)}</title>
     <meta name="description" content="${esc(page.description)}" />
+    ${keywordsMeta}
     <link rel="canonical" href="${canonical}" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="website" />
@@ -346,12 +480,18 @@ function renderPage(page) {
         ${page.sections.map(([title, text]) => `<article><h2>${esc(title)}</h2><p>${esc(text)}</p></article>`).join('\n        ')}
       </section>
 
+      ${offerBlock}
+
       ${founderBlock}
 
       <section class="faq">
         <h2>${esc(page.faq[0])}</h2>
         <p>${esc(page.faq[1])}</p>
       </section>
+
+      ${relatedBlock}
+
+      ${disclaimerBlock}
 
       <section class="link-band">
         <h2>Conheça o ecossistema completo da Movyo.</h2>
@@ -378,7 +518,7 @@ function renderPage(page) {
 `;
 }
 
-const css = `:root{--bg:#07080c;--panel:#11131a;--text:#fff7ef;--muted:rgba(255,247,239,.72);--line:rgba(255,255,255,.13);--orange:#ff6a00;--orange2:#ff8f24;--green:#25d366;--blue:#29a7ff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}*{box-sizing:border-box}body{margin:0;min-width:320px;background:radial-gradient(circle at 12% 0,rgba(255,106,0,.23),transparent 34%),radial-gradient(circle at 92% 8%,rgba(41,167,255,.16),transparent 30%),#07080c}a{color:inherit;text-decoration:none}.seo-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px clamp(18px,4vw,56px);background:rgba(7,8,12,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:950}.brand img{width:36px;height:36px;border-radius:12px}.seo-header nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.seo-header nav a{padding:10px 12px;border-radius:999px;color:var(--muted);font-size:13px;font-weight:850}.seo-header nav a:hover,.nav-cta{color:#fff!important;background:rgba(255,106,0,.16)}main{width:min(1120px,calc(100% - 32px));margin:0 auto}.hero{padding:86px 0 54px}.eyebrow{display:inline-flex;padding:8px 13px;border-radius:999px;color:#ffd6bb;background:rgba(255,106,0,.12);border:1px solid rgba(255,106,0,.28);font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.06em}h1{max-width:930px;margin:22px 0 22px;font-size:clamp(44px,7vw,84px);line-height:.94;letter-spacing:-.06em}h2{margin:0 0 12px;font-size:clamp(28px,3vw,42px);line-height:1;letter-spacing:-.04em}.hero p,.content-grid p,.faq p,footer p{color:var(--muted);font-size:18px;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;border-radius:999px;font-weight:950}.primary{color:#fff;background:linear-gradient(135deg,var(--orange),var(--orange2));box-shadow:0 18px 55px rgba(255,106,0,.24)}.ghost{border:1px solid var(--line);background:rgba(255,255,255,.06)}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:36px}.benefits article{min-height:108px;padding:18px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.055)}.benefits strong{line-height:1.35}.content-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.content-grid article,.faq,.link-band{padding:28px;border-radius:28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));box-shadow:0 22px 70px rgba(0,0,0,.22)}.faq{margin-top:16px}.link-band{margin-top:16px}.link-band div{display:flex;flex-wrap:wrap;gap:10px}.link-band a{padding:11px 13px;border-radius:999px;border:1px solid rgba(255,106,0,.24);color:#ffd6bb;background:rgba(255,106,0,.10);font-weight:850;font-size:13px}footer{width:min(1120px,calc(100% - 32px));margin:28px auto 0;padding:28px 0 48px;color:var(--muted)}footer a{color:#ffd6bb;font-weight:900}@media(max-width:820px){.seo-header{align-items:flex-start;flex-direction:column}.benefits,.content-grid{grid-template-columns:1fr}h1{font-size:clamp(40px,13vw,64px)}.actions .button{width:100%}}`;
+const css = `:root{--bg:#07080c;--panel:#11131a;--text:#fff7ef;--muted:rgba(255,247,239,.72);--line:rgba(255,255,255,.13);--orange:#ff6a00;--orange2:#ff8f24;--green:#25d366;--blue:#29a7ff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}*{box-sizing:border-box}body{margin:0;min-width:320px;background:radial-gradient(circle at 12% 0,rgba(255,106,0,.23),transparent 34%),radial-gradient(circle at 92% 8%,rgba(41,167,255,.16),transparent 30%),#07080c}a{color:inherit;text-decoration:none}.seo-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px clamp(18px,4vw,56px);background:rgba(7,8,12,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:950}.brand img{width:36px;height:36px;border-radius:12px}.seo-header nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.seo-header nav a{padding:10px 12px;border-radius:999px;color:var(--muted);font-size:13px;font-weight:850}.seo-header nav a:hover,.nav-cta{color:#fff!important;background:rgba(255,106,0,.16)}main{width:min(1120px,calc(100% - 32px));margin:0 auto}.hero{padding:86px 0 54px}.eyebrow{display:inline-flex;padding:8px 13px;border-radius:999px;color:#ffd6bb;background:rgba(255,106,0,.12);border:1px solid rgba(255,106,0,.28);font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.06em}h1{max-width:930px;margin:22px 0 22px;font-size:clamp(44px,7vw,84px);line-height:.94;letter-spacing:-.06em}h2{margin:0 0 12px;font-size:clamp(28px,3vw,42px);line-height:1;letter-spacing:-.04em}.hero p,.content-grid p,.faq p,.offer p,footer p{color:var(--muted);font-size:18px;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;border-radius:999px;font-weight:950}.primary{color:#fff;background:linear-gradient(135deg,var(--orange),var(--orange2));box-shadow:0 18px 55px rgba(255,106,0,.24)}.ghost{border:1px solid var(--line);background:rgba(255,255,255,.06)}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:36px}.benefits article{min-height:108px;padding:18px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.055)}.benefits strong{line-height:1.35}.content-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.content-grid article,.faq,.link-band,.offer{padding:28px;border-radius:28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));box-shadow:0 22px 70px rgba(0,0,0,.22)}.offer{margin-top:16px;border-color:rgba(255,106,0,.32);background:linear-gradient(135deg,rgba(255,106,0,.18),rgba(255,255,255,.04))}.offer span{display:inline-flex;margin-bottom:12px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.08);color:#ffd6bb;font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.06em}.faq{margin-top:16px}.disclaimer{margin:16px 0 0;color:rgba(255,247,239,.54);font-size:13px;line-height:1.6}.link-band{margin-top:16px}.comparison-band{border-color:rgba(41,167,255,.28)}.link-band div{display:flex;flex-wrap:wrap;gap:10px}.link-band a{padding:11px 13px;border-radius:999px;border:1px solid rgba(255,106,0,.24);color:#ffd6bb;background:rgba(255,106,0,.10);font-weight:850;font-size:13px}footer{width:min(1120px,calc(100% - 32px));margin:28px auto 0;padding:28px 0 48px;color:var(--muted)}footer a{color:#ffd6bb;font-weight:900}@media(max-width:820px){.seo-header{align-items:flex-start;flex-direction:column}.benefits,.content-grid{grid-template-columns:1fr}h1{font-size:clamp(40px,13vw,64px)}.actions .button{width:100%}}`;
 
 if (!existsSync(distDir)) {
   throw new Error('A pasta dist não existe. Rode vite build antes de gerar páginas SEO.');
