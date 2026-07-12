@@ -36,6 +36,96 @@ const pages = [
     faq: ['A Movyo substitui sistemas separados?', 'A Movyo centraliza recursos de venda, atendimento, caixa, pagamentos, Hub mobile e gestão para reduzir ferramentas isoladas na operação.'],
   },
   {
+    slug: 'sistema-de-delivery',
+    title: 'Sistema de Delivery para Restaurante | Movyo Delivery',
+    description: 'Sistema de delivery para restaurante com PDV, iFood, cardápio digital, WhatsApp, app para entregadores, pagamentos, estoque e Mobile Starter por R$ 49,99.',
+    keywords: ['sistema de delivery', 'sistema de delivery Movyo Delivery', 'sistema delivery restaurante', 'sistema para delivery', 'delivery próprio restaurante', 'sistema de pedidos delivery'],
+    eyebrow: 'Sistema de delivery',
+    h1: 'Sistema de delivery Movyo Delivery para restaurante vender, produzir e entregar melhor.',
+    intro: 'A Movyo Delivery é um sistema de delivery para restaurantes que precisam organizar pedidos, PDV, cardápio digital, integração com iFood, WhatsApp, app para entregadores, pagamentos online, estoque por receita e relatórios em uma operação conectada.',
+    benefits: ['Delivery próprio sem comissão por pedido', 'Integração com iFood no fluxo da operação', 'App para entregadores incluso no ecossistema', 'Mobile Starter por R$ 49,99 como entrada comercial'],
+    sections: [
+      ['Por que usar um sistema de delivery?', 'Um sistema de delivery ajuda o restaurante a receber pedidos com menos erro, organizar produção, acompanhar entregas, reduzir retrabalho no WhatsApp e enxergar melhor o desempenho da operação.'],
+      ['O que a Movyo entrega', 'A Movyo conecta cardápio digital, PDV, balcão, Hub mobile, desktop Windows, iFood, entregadores, pagamentos online, estoque por receita, relatórios e recuperação de vendas em um único ecossistema.'],
+      ['Para quem é indicado', 'Restaurantes, pizzarias, hamburguerias, lanchonetes, açaís e operações com delivery próprio podem usar a Movyo para centralizar pedidos e profissionalizar atendimento, produção, caixa e entrega.'],
+      ['Custo de entrada', 'O perfil Movyo Mobile Starter por R$ 49,99 cria uma porta de entrada para restaurantes que querem começar com uma solução acessível e evoluir conforme a operação crescer.'],
+    ],
+    faq: ['A Movyo Delivery é um sistema de delivery?', 'Sim. A Movyo Delivery é um sistema de delivery para restaurantes com cardápio digital, PDV, integração com iFood, app para entregadores, pagamentos online, estoque, relatórios e gestão integrada.'],
+    faqs: [
+      ['Qual é o melhor sistema de delivery?', 'O melhor sistema de delivery é aquele que conecta pedidos, PDV, produção, pagamentos, entregadores e relatórios em vez de deixar o restaurante preso a várias telas soltas. A Movyo foi criada para unir essas etapas em uma operação mais organizada.'],
+      ['Quanto custa um sistema de delivery?', 'O custo depende dos recursos, volume e acordo comercial. Na Movyo, o perfil Mobile Starter parte de R$ 49,99, além de taxas transacionais apenas quando pagamentos online são processados pelo provedor.'],
+      ['Qual sistema de delivery é gratuito?', 'A Movyo oferece teste grátis por 20 dias no plano Free, com validação da conta antes da liberação comercial. Para uso contínuo, há perfis pagos como o Mobile Starter.'],
+      ['Quais são os tipos de delivery?', 'Os tipos mais comuns são delivery próprio, retirada no balcão, pedidos por marketplace, pedidos por WhatsApp e pedidos em cardápio digital próprio. A Movyo ajuda a organizar esses canais em um fluxo único.'],
+    ],
+    offer: {
+      name: 'Movyo Mobile Starter',
+      price: '49.99',
+      description: 'Perfil de entrada da Movyo para restaurantes que querem começar com delivery organizado, com valor a partir de R$ 49,99 conforme condições comerciais.',
+    },
+    relatedLinks: [
+      ['Melhor sistema para delivery', '/melhor-sistema-para-delivery/'],
+      ['Sistema delivery para restaurante', '/sistema-delivery-restaurante/'],
+    ],
+  },
+  {
+    slug: 'melhor-sistema-para-delivery',
+    title: 'Melhor Sistema para Delivery: Como Escolher | Movyo',
+    description: 'Veja como escolher o melhor sistema para delivery com PDV, iFood, app para entregadores, pagamentos online, estoque, relatórios e plano a partir de R$ 49,99.',
+    keywords: ['melhor sistema para delivery', 'melhor sistema de delivery', 'sistema delivery completo', 'sistema para restaurante delivery', 'sistema delivery com iFood', 'sistema delivery com entregadores'],
+    eyebrow: 'Melhor sistema para delivery',
+    h1: 'Melhor sistema para delivery é o que organiza o pedido do cardápio até a entrega.',
+    intro: 'Na prática, o melhor sistema para delivery não é apenas o mais conhecido. É o que reduz erro, centraliza canais, conecta iFood, PDV, pagamentos, entregadores, estoque e relatórios, e permite que o restaurante acompanhe a operação com clareza.',
+    benefits: ['Critérios claros para comparar sistemas', 'iFood, delivery próprio e balcão no mesmo raciocínio', 'Gestão de entregadores com app incluso', 'Movyo Mobile Starter a partir de R$ 49,99'],
+    sections: [
+      ['Critérios importantes', 'Antes de contratar, avalie se o sistema tem cardápio digital, PDV, integração com iFood, controle de entregadores, pagamentos online, estoque, relatórios, suporte e caminho de crescimento.'],
+      ['Por que a Movyo entra na comparação', 'A Movyo reúne recursos de venda, atendimento, produção, pagamento, entrega e gestão para restaurantes que querem reduzir improviso e depender menos de ferramentas separadas.'],
+      ['Preço não é o único ponto', 'Um sistema barato que gera retrabalho pode custar caro na rotina. O ideal é comparar mensalidade, taxas transacionais, comissão por pedido, implantação, suporte e tempo da equipe.'],
+      ['Entrada comercial acessível', 'A Movyo terá o perfil Mobile Starter por R$ 49,99, pensado para restaurantes que querem começar com organização e validar a solução antes de avançar para planos maiores.'],
+    ],
+    faq: ['Como escolher o melhor sistema para delivery?', 'Escolha avaliando se o sistema centraliza pedidos, PDV, iFood, pagamentos, entregadores, estoque, relatórios e suporte. A Movyo entra nessa comparação como uma plataforma integrada para restaurantes.'],
+    faqs: [
+      ['Qual é o melhor sistema para delivery?', 'O melhor sistema para delivery é aquele que acompanha o pedido desde o cardápio digital até produção, pagamento e entrega, com relatórios para o gestor. A Movyo foi criada para esse fluxo integrado.'],
+      ['Quanto custa um sistema para delivery?', 'Na Movyo, o perfil Mobile Starter parte de R$ 49,99. O custo final pode variar conforme recursos, implantação, volume e condições comerciais.'],
+      ['Sistema de delivery precisa ter iFood integrado?', 'Para muitos restaurantes, sim. A integração com iFood ajuda a reduzir troca manual de telas e centralizar pedidos de marketplace junto com delivery próprio, balcão e salão.'],
+      ['Sistema de delivery precisa ter app para entregadores?', 'Para quem faz entrega própria, o app para entregadores ajuda a organizar rotina, pedidos e acompanhamento, reduzindo controle manual por mensagem solta.'],
+    ],
+    offer: {
+      name: 'Movyo Mobile Starter',
+      price: '49.99',
+      description: 'Perfil de entrada da Movyo para restaurantes que querem iniciar com uma operação de delivery mais organizada.',
+    },
+    relatedLinks: [
+      ['Sistema de delivery Movyo', '/sistema-de-delivery/'],
+      ['Alternativas de sistemas para restaurante', '/alternativas-sistemas-restaurante/'],
+    ],
+  },
+  {
+    slug: 'sistema-delivery-restaurante',
+    title: 'Sistema Delivery para Restaurante, Pizzaria e Hamburgueria | Movyo',
+    description: 'Sistema delivery para restaurante, pizzaria e hamburgueria com cardápio digital, PDV, iFood, app para entregadores, caixa, pagamentos e estoque.',
+    keywords: ['sistema delivery restaurante', 'sistema delivery pizzaria', 'sistema delivery hamburgueria', 'sistema para lanchonete delivery', 'sistema de pedidos delivery restaurante'],
+    eyebrow: 'Delivery para restaurante',
+    h1: 'Sistema delivery para restaurante, pizzaria, hamburgueria e lanchonete.',
+    intro: 'A Movyo organiza a operação de delivery para restaurantes que vendem por cardápio digital, WhatsApp, balcão, telefone, iFood e canal próprio, conectando atendimento, produção, caixa, entregadores e gestão.',
+    benefits: ['Pedidos centralizados para equipe e produção', 'PDV, caixa, Hub mobile e desktop Windows', 'iFood e app para entregadores no ecossistema', 'Teste grátis por 20 dias no plano Free'],
+    sections: [
+      ['Restaurante com mais controle', 'Quando os pedidos entram em um fluxo organizado, a equipe reduz erro de anotação, atraso na produção, conferência manual e perda de informação entre atendimento, cozinha e entrega.'],
+      ['Pizzaria e hamburgueria', 'Operações com adicionais, combos, tamanhos, sabores e observações precisam de pedido claro, produção organizada, estoque por receita e acompanhamento de entrega.'],
+      ['Delivery próprio e marketplace', 'A Movyo fortalece o canal próprio do restaurante sem ignorar o marketplace. A integração com iFood ajuda a tratar pedidos externos junto com o restante da operação.'],
+      ['Gestão em tempo real', 'O gestor acompanha indicadores, pedidos, caixa, pagamentos e entregadores com mais visibilidade para decidir melhor durante e depois do turno.'],
+    ],
+    faq: ['A Movyo serve para restaurante, pizzaria e hamburgueria?', 'Sim. A Movyo foi pensada para restaurantes, pizzarias, hamburguerias, lanchonetes e operações com delivery que precisam organizar pedidos, caixa, produção, entregadores e gestão.'],
+    faqs: [
+      ['Qual sistema delivery serve para restaurante?', 'Um sistema delivery para restaurante deve ter cardápio digital, PDV, pedidos centralizados, pagamento online, relatórios e gestão de entregadores. A Movyo reúne esses recursos em um ecossistema integrado.'],
+      ['Sistema delivery serve para pizzaria?', 'Sim. A Movyo ajuda pizzarias a organizar pedidos com sabores, adicionais, produção, caixa, delivery próprio, iFood e entregadores.'],
+      ['Sistema delivery serve para hamburgueria?', 'Sim. Hamburguerias podem usar a Movyo para pedidos, combos, adicionais, estoque por receita, pagamentos e acompanhamento da entrega.'],
+    ],
+    relatedLinks: [
+      ['Sistema de delivery', '/sistema-de-delivery/'],
+      ['Integração com iFood', '/integracao-ifood/'],
+    ],
+  },
+  {
     slug: 'pdv-restaurante',
     title: 'PDV para Restaurante, Balcão e Frente de Caixa | Movyo',
     description: 'PDV para restaurante com balcão, atendimento local, frente de caixa, sangria, suprimento, descontos, impressões e relatórios conectados.',
@@ -286,6 +376,7 @@ function renderAnalytics() {
 
 function renderJsonLd(page) {
   const canonical = `${siteUrl}/${page.slug}/`;
+  const faqItems = page.faqs || [page.faq];
   const graph = [
     {
       '@type': 'WebPage',
@@ -312,16 +403,14 @@ function renderJsonLd(page) {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: [
-        {
+      mainEntity: faqItems.map(([question, answer]) => ({
           '@type': 'Question',
-          name: page.faq[0],
+          name: question,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: page.faq[1],
+            text: answer,
           },
-        },
-      ],
+        })),
     },
   ];
 
@@ -393,6 +482,7 @@ function renderJsonLd(page) {
 
 function renderPage(page) {
   const canonical = `${siteUrl}/${page.slug}/`;
+  const faqItems = page.faqs || [page.faq];
   const founderBlock = page.organizationPage
     ? `<section class="faq" id="helio-livramento">
         <h2>Helio Livramento, fundador da Movyo Delivery</h2>
@@ -420,6 +510,9 @@ function renderPage(page) {
         </div>
       </section>`
     : '';
+  const faqBlock = `<section class="faq">
+        ${faqItems.map(([question, answer]) => `<article><h2>${esc(question)}</h2><p>${esc(answer)}</p></article>`).join('\n        ')}
+      </section>`;
 
   return `<!doctype html>
 <html lang="pt-BR">
@@ -484,10 +577,7 @@ function renderPage(page) {
 
       ${founderBlock}
 
-      <section class="faq">
-        <h2>${esc(page.faq[0])}</h2>
-        <p>${esc(page.faq[1])}</p>
-      </section>
+      ${faqBlock}
 
       ${relatedBlock}
 
@@ -496,6 +586,9 @@ function renderPage(page) {
       <section class="link-band">
         <h2>Conheça o ecossistema completo da Movyo.</h2>
         <div>
+          <a href="/sistema-de-delivery/">Sistema de delivery</a>
+          <a href="/melhor-sistema-para-delivery/">Melhor sistema para delivery</a>
+          <a href="/sistema-delivery-restaurante/">Sistema delivery restaurante</a>
           <a href="/pdv-restaurante/">PDV para restaurante</a>
           <a href="/aplicativo-para-garcom/">Aplicativo para garçom</a>
           <a href="/controle-de-estoque-restaurante/">Estoque por receita</a>
@@ -518,7 +611,7 @@ function renderPage(page) {
 `;
 }
 
-const css = `:root{--bg:#07080c;--panel:#11131a;--text:#fff7ef;--muted:rgba(255,247,239,.72);--line:rgba(255,255,255,.13);--orange:#ff6a00;--orange2:#ff8f24;--green:#25d366;--blue:#29a7ff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}*{box-sizing:border-box}body{margin:0;min-width:320px;background:radial-gradient(circle at 12% 0,rgba(255,106,0,.23),transparent 34%),radial-gradient(circle at 92% 8%,rgba(41,167,255,.16),transparent 30%),#07080c}a{color:inherit;text-decoration:none}.seo-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px clamp(18px,4vw,56px);background:rgba(7,8,12,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:950}.brand img{width:36px;height:36px;border-radius:12px}.seo-header nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.seo-header nav a{padding:10px 12px;border-radius:999px;color:var(--muted);font-size:13px;font-weight:850}.seo-header nav a:hover,.nav-cta{color:#fff!important;background:rgba(255,106,0,.16)}main{width:min(1120px,calc(100% - 32px));margin:0 auto}.hero{padding:86px 0 54px}.eyebrow{display:inline-flex;padding:8px 13px;border-radius:999px;color:#ffd6bb;background:rgba(255,106,0,.12);border:1px solid rgba(255,106,0,.28);font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.06em}h1{max-width:930px;margin:22px 0 22px;font-size:clamp(44px,7vw,84px);line-height:.94;letter-spacing:-.06em}h2{margin:0 0 12px;font-size:clamp(28px,3vw,42px);line-height:1;letter-spacing:-.04em}.hero p,.content-grid p,.faq p,.offer p,footer p{color:var(--muted);font-size:18px;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;border-radius:999px;font-weight:950}.primary{color:#fff;background:linear-gradient(135deg,var(--orange),var(--orange2));box-shadow:0 18px 55px rgba(255,106,0,.24)}.ghost{border:1px solid var(--line);background:rgba(255,255,255,.06)}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:36px}.benefits article{min-height:108px;padding:18px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.055)}.benefits strong{line-height:1.35}.content-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.content-grid article,.faq,.link-band,.offer{padding:28px;border-radius:28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));box-shadow:0 22px 70px rgba(0,0,0,.22)}.offer{margin-top:16px;border-color:rgba(255,106,0,.32);background:linear-gradient(135deg,rgba(255,106,0,.18),rgba(255,255,255,.04))}.offer span{display:inline-flex;margin-bottom:12px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.08);color:#ffd6bb;font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.06em}.faq{margin-top:16px}.disclaimer{margin:16px 0 0;color:rgba(255,247,239,.54);font-size:13px;line-height:1.6}.link-band{margin-top:16px}.comparison-band{border-color:rgba(41,167,255,.28)}.link-band div{display:flex;flex-wrap:wrap;gap:10px}.link-band a{padding:11px 13px;border-radius:999px;border:1px solid rgba(255,106,0,.24);color:#ffd6bb;background:rgba(255,106,0,.10);font-weight:850;font-size:13px}footer{width:min(1120px,calc(100% - 32px));margin:28px auto 0;padding:28px 0 48px;color:var(--muted)}footer a{color:#ffd6bb;font-weight:900}@media(max-width:820px){.seo-header{align-items:flex-start;flex-direction:column}.benefits,.content-grid{grid-template-columns:1fr}h1{font-size:clamp(40px,13vw,64px)}.actions .button{width:100%}}`;
+const css = `:root{--bg:#07080c;--panel:#11131a;--text:#fff7ef;--muted:rgba(255,247,239,.72);--line:rgba(255,255,255,.13);--orange:#ff6a00;--orange2:#ff8f24;--green:#25d366;--blue:#29a7ff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}*{box-sizing:border-box}body{margin:0;min-width:320px;background:radial-gradient(circle at 12% 0,rgba(255,106,0,.23),transparent 34%),radial-gradient(circle at 92% 8%,rgba(41,167,255,.16),transparent 30%),#07080c}a{color:inherit;text-decoration:none}.seo-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px clamp(18px,4vw,56px);background:rgba(7,8,12,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:950}.brand img{width:36px;height:36px;border-radius:12px}.seo-header nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.seo-header nav a{padding:10px 12px;border-radius:999px;color:var(--muted);font-size:13px;font-weight:850}.seo-header nav a:hover,.nav-cta{color:#fff!important;background:rgba(255,106,0,.16)}main{width:min(1120px,calc(100% - 32px));margin:0 auto}.hero{padding:86px 0 54px}.eyebrow{display:inline-flex;padding:8px 13px;border-radius:999px;color:#ffd6bb;background:rgba(255,106,0,.12);border:1px solid rgba(255,106,0,.28);font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.06em}h1{max-width:930px;margin:22px 0 22px;font-size:clamp(44px,7vw,84px);line-height:.94;letter-spacing:-.06em}h2{margin:0 0 12px;font-size:clamp(28px,3vw,42px);line-height:1;letter-spacing:-.04em}.hero p,.content-grid p,.faq p,.offer p,footer p{color:var(--muted);font-size:18px;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;border-radius:999px;font-weight:950}.primary{color:#fff;background:linear-gradient(135deg,var(--orange),var(--orange2));box-shadow:0 18px 55px rgba(255,106,0,.24)}.ghost{border:1px solid var(--line);background:rgba(255,255,255,.06)}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:36px}.benefits article{min-height:108px;padding:18px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.055)}.benefits strong{line-height:1.35}.content-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.content-grid article,.faq,.link-band,.offer{padding:28px;border-radius:28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));box-shadow:0 22px 70px rgba(0,0,0,.22)}.offer{margin-top:16px;border-color:rgba(255,106,0,.32);background:linear-gradient(135deg,rgba(255,106,0,.18),rgba(255,255,255,.04))}.offer span{display:inline-flex;margin-bottom:12px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.08);color:#ffd6bb;font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.06em}.faq{margin-top:16px}.faq article+article{margin-top:22px;padding-top:22px;border-top:1px solid var(--line)}.disclaimer{margin:16px 0 0;color:rgba(255,247,239,.54);font-size:13px;line-height:1.6}.link-band{margin-top:16px}.comparison-band{border-color:rgba(41,167,255,.28)}.link-band div{display:flex;flex-wrap:wrap;gap:10px}.link-band a{padding:11px 13px;border-radius:999px;border:1px solid rgba(255,106,0,.24);color:#ffd6bb;background:rgba(255,106,0,.10);font-weight:850;font-size:13px}footer{width:min(1120px,calc(100% - 32px));margin:28px auto 0;padding:28px 0 48px;color:var(--muted)}footer a{color:#ffd6bb;font-weight:900}@media(max-width:820px){.seo-header{align-items:flex-start;flex-direction:column}.benefits,.content-grid{grid-template-columns:1fr}h1{font-size:clamp(40px,13vw,64px)}.actions .button{width:100%}}`;
 
 if (!existsSync(distDir)) {
   throw new Error('A pasta dist não existe. Rode vite build antes de gerar páginas SEO.');
