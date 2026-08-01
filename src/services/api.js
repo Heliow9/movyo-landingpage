@@ -32,7 +32,7 @@ export async function registerRestaurant(payload) {
       form_name: 'cadastro_restaurante_free',
       status_code: response.status,
     });
-    throw new Error(data?.message || data?.erro || 'Não foi possível concluir o cadastro agora.');
+    throw new Error(data?.mensagem || data?.message || data?.erro || 'Não foi possível concluir o cadastro agora.');
   }
 
   trackEvent('generate_lead', {
